@@ -1,0 +1,3 @@
+streamlit==1.5.0
+neuralprophet==0.3.2
+pytrends==4.8.0
