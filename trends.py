@@ -23,9 +23,8 @@ FORECAST_WEEKS = st.sidebar.text_input('Número de semanas a predecir', value=10
 LANGUAGE = st.sidebar.selectbox(
     "Elija el país según las siglas de Google",
     (
-        "EC",
-        "US",
         "AR",
+        "US",
         "PE",
         "CO",
         "MX",
