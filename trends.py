@@ -42,7 +42,7 @@ if submitted:
     st.write("Buscando y generando predicción de: %s" % KW[0])
     pt = TrendReq(hl=LANGUAGE, timeout=(10, 25), retries=RETRIES, backoff_factor=0.5)
 
-    pt.build_payload(KW, timeframe='today 12-m', geo=LANGUAGE)
+    pt.build_payload(KW, timeframe='today 3-m', geo=LANGUAGE)
     df = pt.interest_over_time()
 
     df = df[df['isPartial'] == False].reset_index()
